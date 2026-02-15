@@ -1,6 +1,14 @@
 package com.example;
 import java.util.Arrays;
 
+
+//MaxHeapWordFreq
+
+//Bottom up BUILDMAXHEAP construction using an array of the wordfreq objects
+// higher freq = higher priority
+
+
+
 public final class MaxHeapWordFreq{
 
     //build max heap bottom up
@@ -15,6 +23,11 @@ public final class MaxHeapWordFreq{
 
         //Iterativee max heapify
     }
+
+
+    //Time complexity: O(log n)
+    //iterative ver. of MAXHEAPIFY
+
 
 
         private static void maxHeapify(WordFreq[] a, int i, int heapSize){
@@ -39,13 +52,16 @@ public final class MaxHeapWordFreq{
         }
             
         
-        //swap method
+        //swap method: swap 2 elements in an array
+
+
         private static void swap(WordFreq[] a, int i, int j){
             WordFreq temp = a[i];
             a[i] = a[j];
             a[j] = temp;     
         }
         
+        //creates wordfreq array, builds heap, prints
 
         public static void main(String[] args){
 
